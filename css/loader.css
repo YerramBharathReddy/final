@@ -1,0 +1,105 @@
+
+  *{margin:0;padding:0;box-sizing:border-box}
+  body,html{height:100%;background:transparent}
+
+  .forge{
+    position:fixed;
+    inset:0;
+    display:grid;
+    place-items:center;
+  }
+
+  .tri{
+    position:absolute;
+    width:0;height:0;
+    opacity:0;
+    filter:drop-shadow(0 0 50px currentColor);
+    animation:cornerIn 2.6s cubic-bezier(.2,.9,.3,1) forwards;
+  }
+  .tri:nth-child(1){border:180px solid transparent;border-right-color:#00ff9d;border-bottom-color:#00c3ff;top:0;left:0;animation-delay:0s}
+  .tri:nth-child(2){border:180px solid transparent;border-left-color:#00c3ff;border-top-color:#00ff9d;top:0;right:0;animation-delay:0.2s}
+  .tri:nth-child(3){border:180px solid transparent;border-right-color:#00ff9d;border-top-color:#00c3ff;bottom:0;right:0;animation-delay:0.4s}
+  .tri:nth-child(4){border:180px solid transparent;border-left-color:#00c3ff;border-bottom-color:#00ff9d;bottom:0;left:0;animation-delay:0.6s}
+
+  .reactor{
+    width:240px;height:240px;
+    position:relative;
+    opacity:0;
+    animation:spawn 0.8s 3s forwards;
+  }
+
+  .hex-ring{
+    position:absolute;
+    inset:0;
+    background:repeating-conic-gradient(from 0deg at 50% 50%, #00ff9d20 0deg,transparent 15deg,transparent 30deg);
+    clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+    animation:hexSpin 8s linear infinite;
+  }
+
+  .arc{
+    position:absolute;
+    background:#00ff9d;
+    filter:blur(3px);
+    opacity:0;
+    animation:zap 2.5s infinite;
+  }
+  .arc:nth-child(2){top:20%;left:30%;width:4px;height:80px;transform:rotate(-60deg);animation-delay:0.2s}
+  .arc:nth-child(3){top:30%;right:25%;width:4px;height:90px;transform:rotate(120deg);animation-delay:0.8s}
+  .arc:nth-child(4){bottom:25%;left:35%;width:4px;height:70px;transform:rotate(60deg);animation-delay:1.4s}
+
+  .core{
+    position:absolute;
+    top:50%;left:50%;
+    width:70px;height:70px;
+    background:linear-gradient(45deg,#00ff9d,#00c3ff);
+    border-radius:16px;
+    transform:translate(-50%,-50%);
+    box-shadow:0 0 80px #00ff9d;
+    animation:compress 2.4s ease-in-out infinite;
+  }
+
+  .shard{
+    position:absolute;
+    width:16px;height:16px;
+    background:#00c3ff;
+    clip-path:polygon(50% 0%,100% 38%,82% 100%,18% 100%,0% 38%);
+    box-shadow:0 0 30px #00ff9d;
+    animation:orbit 6s linear infinite;
+  }
+  .shard:nth-child(5){top:15%;left:15%;animation-duration:5s}
+  .shard:nth-child(6){top:20%;right:20%;animation-duration:7s;animation-direction:reverse}
+  .shard:nth-child(7){bottom:15%;left:25%;animation-duration:6s}
+
+  .hash{
+    position:absolute;
+    bottom:-60px;
+    font:bold 1.4rem 'Courier New',monospace;
+    color:#00ff9d;
+    text-shadow:0 0 20px #00ff9d;
+    letter-spacing:4px;
+    animation:type 4s steps(20) infinite;
+  }
+
+  @keyframes cornerIn{
+    0%{opacity:0;transform:scale(0.1)}
+    65%{opacity:1;transform:scale(1.2)}
+    100%{opacity:0;transform:scale(1)}
+  }
+  @keyframes spawn{ to{opacity:1} }
+  @keyframes hexSpin{ to{transform:rotate(360deg)} }
+  @keyframes compress{
+    0%,100%{transform:translate(-50%,-50%) scale(1) rotate(0deg)}
+    50%{transform:translate(-50%,-50%) scale(0.65) rotate(180deg);box-shadow:0 0 120px #00ff9d}
+  }
+  @keyframes zap{
+    0%,100%{opacity:0;height:0}
+    15%,85%{opacity:1;height:100px}
+  }
+  @keyframes orbit{
+    to{transform:translate(100px,100px) rotate(360deg) translate(-100px,-100px)}
+  }
+  @keyframes type{
+    0%{content:"Loading ..."}
+    100%{content:"Loading ......"}
+  }
+  .hash::before{content:"loading ••• 0x";animation:type 2s steps(16) infinite}

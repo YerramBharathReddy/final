@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Directors of Mines & Geology, Telangana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f3fcf3, #e4ffe2);
+            color: #333;
+        }
+
+        h3 {
+            text-align: center;
+            color: #18a018;
+            margin: 1rem 0;
+            font-weight: bold;
+        }
+
+        .custom-table-container {
+            width: 85%;
+            max-width: 1500px;
+            margin: auto;
+            border-radius: 16px;
+            /* background: rgba(255, 255, 255, 0.7); */
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(31, 162, 64, 0.1);
+            padding: 1.5rem;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background:#144817;
+            /* background: linear-gradient(to right, #7b1fa2, #e0b0ff); */
+            color: #fff;
+        }
+
+        thead th {
+            text-align: center;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+             
+        }
+
+        tbody td {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #d4fadc;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9fff3;
+        }
+
+        tbody tr:hover {
+            background-color: #909e95;
+            cursor: pointer;
+            color: #fff;
+        }
+        .table-boder-right{
+            border-top-right-radius: 12px;
+        }
+        .table-boder-left{
+            border-top-left-radius: 12px;
+        }
+
+        /* .btn-purple {
+            background-color: transparent;
+            color: #9c5bb8;
+            border: 1px solid #9c5bb8;;
+            border-radius: 20px;
+            padding: 5px 14px;
+            transition: all 0.3s ease;
+        } */
+
+        .btn-purple:hover {
+            background-color: #35a21f;
+            color: white;
+        }
+
+        .modal-header {
+            background-color: #023d02;
+            color: white;
+        }
+
+        .modal-content {
+            border-radius: 16px;
+        }
+
+        .modal-body table th {
+            background-color: #144817;
+            color: #fff;
+        }
+
+        .modal-body table td {
+            background-color: #f9f2ff;
+        }
+
+        .modal-header .btn-close {
+            filter: invert(1);
+        }
+
+        .bg-purple {
+            background-color: #73cc78 !important;
+        }
+
+        .text-purple {
+            color: #04571d !important;
+        }
+
+        .table-purple {
+            background-color: #6cd594 !important;
+        }
+
+        .btn-purple {
+            background-color: #5bb86b;;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-purple:hover {
+            background-color: #014716;
+            color: white;
+        }
+
+
+        .custom-modal-width {
+            max-width: 80%;
+            width: 70%;
+        }
+        .linksection{
+         color: #085f2f;
+         }
+
+        @media (max-width: 768px) {
+
+            thead th,
+            tbody td {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3><i class="fas fa-users-gear me-2"></i>Assistant Director Offices</h3>
+          <!-- <p  class="text-center linksection">About Us / Offices / Assistant Director Offices</p> -->
+
+
+    <div class="custom-table-container mb-3">
+        <table>
+            <thead>
+                <tr>
+                    <th class="table-boder-left"><i class="fas fa-hashtag"></i> S.No</th>
+                    <th><i class="fas fa-map-marker-alt"></i> Office</th>
+                    <th><i class="fas fa-user-tie"></i> Officer</th>
+                    <th><i class="fas fa-id-badge"></i> Designation</th>
+                    <th><i class="fas fa-phone"></i> Contact</th>
+                    <th><i class="fas fa-envelope"></i> Email</th>
+                    <th class="table-boder-right"><i class="fas fa-eye"></i> Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Adilabad</td>
+                    <td>R. Ravinder</td>
+                    <td>Assistant Geologist</td>
+                    <td>7013105316</td>
+                    <td>admg-adb-mines@telangana.gov.in</td>
+                    <td>
+                        <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>BHUPALPALLY</td>
+                    <td>Officer 2 Name</td>
+                    <td>Designation 2</td>
+                    <td>Contact 2</td>
+                    <td>email2@example.com</td>
+                    <td>
+                        <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>GADWAL</td>
+                    <td>Officer 3 Name</td>
+                    <td>Designation 3</td>
+                    <td>Contact 3</td>
+                    <td>email3@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal">  <i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>HYDERABAD</td>
+                    <td>Officer 4 Name</td>
+                    <td>Designation 4</td>
+                    <td>Contact 4</td>
+                    <td>email4@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"> <i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>KARIMNAGAR</td>
+                    <td>Officer 5 Name</td>
+                    <td>Designation 5</td>
+                    <td>Contact 5</td>
+                    <td>email5@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>KHAMMAM</td>
+                    <td>Officer 6 Name</td>
+                    <td>Designation 6</td>
+                    <td>Contact 6</td>
+                    <td>email6@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>KOTHAGUDEM</td>
+                    <td>Officer 7 Name</td>
+                    <td>Designation 7</td>
+                    <td>Contact 7</td>
+                    <td>email7@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>MAHABUBNAGAR</td>
+                    <td>Officer 8 Name</td>
+                    <td>Designation 8</td>
+                    <td>Contact 8</td>
+                    <td>email8@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>MEDAK</td>
+                    <td>Officer 9 Name</td>
+                    <td>Designation 9</td>
+                    <td>Contact 9</td>
+                    <td>email9@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>NALGONDA</td>
+                    <td>Officer 10 Name</td>
+                    <td>Designation 10</td>
+                    <td>Contact 10</td>
+                    <td>email10@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>NIZAMABAD</td>
+                    <td>Officer 11 Name</td>
+                    <td>Designation 11</td>
+                    <td>Contact 11</td>
+                    <td>email11@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>SANGAREDDY</td>
+                    <td>Officer 12 Name</td>
+                    <td>Designation 12</td>
+                    <td>Contact 12</td>
+                    <td>email12@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>SURYAPET</td>
+                    <td>Officer 13 Name</td>
+                    <td>Designation 13</td>
+                    <td>Contact 13</td>
+                    <td>email13@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>VIKARABAD</td>
+                    <td>Officer 14 Name</td>
+                    <td>Designation 14</td>
+                    <td>Contact 14</td>
+                    <td>email14@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>WANAPARTHY</td>
+                    <td>Officer 15 Name</td>
+                    <td>Designation 15</td>
+                    <td>Contact 15</td>
+                    <td>email15@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>WARANGAL</td>
+                    <td>Officer 16 Name</td>
+                    <td>Designation 16</td>
+                    <td>Contact 16</td>
+                    <td>email16@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>YADADRI BHUVANAGIRI</td>
+                    <td>Officer 17 Name</td>
+                    <td>Designation 17</td>
+                    <td>Contact 17</td>
+                    <td>email17@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>JAGTIAL</td>
+                    <td>Officer 18 Name</td>
+                    <td>Designation 18</td>
+                    <td>Contact 18</td>
+                    <td>email18@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>PEDDAPALLI</td>
+                    <td>Officer 19 Name</td>
+                    <td>Designation 19</td>
+                    <td>Contact 19</td>
+                    <td>email19@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>SIRCILLA</td>
+                    <td>Officer 20 Name</td>
+                    <td>Designation 20</td>
+                    <td>Contact 20</td>
+                    <td>email20@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>MAHABUBABAD</td>
+                    <td>Officer 21 Name</td>
+                    <td>Designation 21</td>
+                    <td>Contact 21</td>
+                    <td>email21@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>JANGAON</td>
+                    <td>Officer 22 Name</td>
+                    <td>Designation 22</td>
+                    <td>Contact 22</td>
+                    <td>email22@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>MEDCHAL-MALKAJGIRI</td>
+                    <td>Officer 23 Name</td>
+                    <td>Designation 23</td>
+                    <td>Contact 23</td>
+                    <td>email23@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>RANGAREDDY</td>
+                    <td>Officer 24 Name</td>
+                    <td>Designation 24</td>
+                    <td>Contact 24</td>
+                    <td>email24@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>JAYASHANKAR BHUPALAPALLY</td>
+                    <td>Officer 25 Name</td>
+                    <td>Designation 25</td>
+                    <td>Contact 25</td>
+                    <td>email25@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>WARANGAL RURAL</td>
+                    <td>Officer 26 Name</td>
+                    <td>Designation 26</td>
+                    <td>Contact 26</td>
+
+                    <td>email26@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>MULUGU</td>
+                    <td>Officer 27 Name</td>
+                    <td>Designation 27</td>
+                    <td>Contact 27</td>
+                    <td>email27@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>NARAYANPET</td>
+                    <td>Officer 28 Name</td>
+                    <td>Designation 28</td>
+                    <td>Contact 28</td>
+                    <td>email28@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>JOGULAMBA GADWAL</td>
+                    <td>Officer 29 Name</td>
+                    <td>Designation 29</td>
+                    <td>Contact 29</td>
+                    <td>email29@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>YADADRI</td>
+                    <td>Officer 30 Name</td>
+                    <td>Designation 30</td>
+                    <td>Contact 30</td>
+                    <td>email30@example.com</td>
+                    <td> <button class="btn btn-sm btn-purple" data-bs-toggle="modal"
+                            data-bs-target="#adilabadModal"><i class="fas fa-eye m-1"></i>View</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade mt-3" id="adilabadModal" tabindex="-1" aria-labelledby="adilabadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content shadow-lg rounded-4 border-0">
+                <div class="modal-header bg-purple text-white">
+                    <h5 class="modal-title text-center" id="adilabadModalLabel">Adilabad Office Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 py-3">
+
+                    <div class="mb-3">
+                        <p><strong class="me-2">DDO Code:</strong> 12345678910</p>
+                        <p><strong  class="me-3" >TAN No:</strong> HYDA18191F</p>
+                        <p><strong  class="me-3">Address:</strong> 3/3/3 HYDERABAD</p>
+                    </div>
+
+                    <h5 class="text-center text-purple mb-3"><i class="fas fa-user me-2"></i>Employee Details</h5>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle shadow-sm">
+                            <thead class="table-purple text-white text-center">
+                                <tr>
+                                    <th>Sl.No</th>
+                                    <th>Name</th>
+                                    <th>Designation</th>
+                                    <th>Contact</th>
+                                    <th>Email</th>
+                                    <th>From Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td class="table-boder-left">1</td>
+                                    <td>R. Ravinder</td>
+                                    <td>Assistant Geologist / ADM&G(I/C)</td>
+                                    <td>7013105316</td>
+                                    <td>admg-adb-mines@telangana.gov.in</td>
+                                    <td class="table-boder-right">19/03/2024</td>
+                                </tr >
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Bottom Close Button -->
+                    <div class="text-end mt-4">
+                        <button type="button" class="btn btn-purple px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
