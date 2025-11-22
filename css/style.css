@@ -352,3 +352,49 @@ body.high-contrast .btn-outline-primary {
 @keyframes spin {
     100% { transform: rotate(360deg); }
 }
+
+/*  card  */
+.leader-card {
+    background: linear-gradient(135deg, #ecf7ee, #f1fdf1);
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px 20px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.leader-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.leader-card h4 {
+    color: #0d47a1;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+
+.leader-card p {
+    color: #333;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.3rem;
+}
